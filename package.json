@@ -1,0 +1,37 @@
+{
+  "name": "webex-chatbot-add-trello-card",
+  "version": "0.0.1",
+  "description": "This is a chatbot designed to be able to create new trello cards all through a chatbot in cisco webex.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "botkit": "^0.6.20",
+    "botkit-studio-metrics": "^0.0.1",
+    "debug": "^2.6.0",
+    "express": "^4.14.0",
+    "mongoose": "^5.3.9",
+    "node-env-file": "^0.1.8",
+    "request": "^2.79.0",
+    "trello": "^0.9.0",
+    "wordfilter": "^0.2.6"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sagitarious12/webex-chatbot-add-trello-card"
+  },
+  "homepage": "https://github.com/sagitarious12/webex-chatbot-add-trello-card",
+  "keywords": [
+    "bots",
+    "chatbots",
+    "Cisco Spark",
+    "Webex",
+    "Trello",
+    "Cards"
+  ],
+  "author": "rileyworthen.123@gmail.com",
+  "license": "ISC"
+}
