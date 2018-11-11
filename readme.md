@@ -7,12 +7,14 @@ This specific integration will allow any person to add a card onto a trello boar
 
 ## Installation
 
-First thing that you need to do is go to [Botkit studio](https://studio.botkit.ai/login) in order to get an access token to use [BotKit](https://botkit.ai/docs/). Once you get an access token, that needs to be placed in the .env file as the access_token.
+### First
+Go to [Botkit studio](https://studio.botkit.ai/login) in order to get an access token to use [BotKit](https://botkit.ai/docs/). Once you get an access token, that needs to be placed in the .env file as the access_token.
 
 ![Building a bot with Botkit][Build-A-Bot-Botkit]
 ![Get the access token from Botkit][botkit-access-key]
 
-Second thing that you need to do is download the [Cisco Webex Desktop platform](https://www.webex.com/downloads.html) and install and run it. Once you get to the enter your work email address page just type in any email address and continue with creating a password.
+### Second
+Download the [Cisco Webex Desktop platform](https://www.webex.com/downloads.html) and install and run it. Once you get to the enter your work email address page just type in any email address and continue with creating a password.
 
 ![Login page on Webex Platform][webex-opening-screen]
 
@@ -21,21 +23,27 @@ Next thing that you need to do is go to the [Cisco Webex Developer Page](https:/
 ![Webex add bot button][Cisco-Developer-Create-Bot]
 ![Cisco Developer Create a Bot Form with the email][cisco-developer-create-bot-form-with-email]
 
-Third thing that you need to do is go to [Trello](https://trello.com/app-key) and make sure that you are logged in and this link will take you to get a key for your application. Also where it says "you can manually generate a Token" click on the link and get a token for this application. Those two fields need to be saved under the trello_key and the trello_token fields of the .env file.
+### Third
+Go to [Trello](https://trello.com/app-key) and make sure that you are logged in and this link will take you to get a key for your application. Also where it says "you can manually generate a Token" click on the link and get a token for this application. Those two fields need to be saved under the trello_key and the trello_token fields of the .env file.
 
 ![Trello Generate API key][trello-developer-api-key-with-token-button]
 
-Fourth thing that you need to do is install [Heroku](https://devcenter.heroku.com/articles/heroku-cli) on your computer. Heroku is a platform that allows you to upload node.js and Express projects to host them as easily as using Git. After installation, go onto your command prompt and navigate to your repository location. Then type "heroku create". It will then generate a public location for your application to be hosted so that Cisco Webex can access it. Place the address that was just created into the public_address field of the .env file.
+### Fourth
+Install [Heroku](https://devcenter.heroku.com/articles/heroku-cli) on your computer. Heroku is a platform that allows you to upload node.js and Express projects to host them as easily as using Git. After installation, go onto your command prompt and navigate to your repository location. Then type "heroku create". It will then generate a public location for your application to be hosted so that Cisco Webex can access it. Place the address that was just created into the public_address field of the .env file.
 
-Fifth thing that you need to do is fill in the last field in the .env file. the secret field is any password that you want.
+### Fifth
+Fill in the last field in the .env file. the secret field is any password that you want.
 
-Sixth thing that you need to do is go into your [Heroku Dashboard](https://dashboard.heroku.com/apps) and click on the app that you just created. Go into the settings of the application and click on "Reveal Config Vars" This will be where you need to add each of the fields from the .env file into these locations. Add new fields for each .env line.
+### Sixth
+Go into your [Heroku Dashboard](https://dashboard.heroku.com/apps) and click on the app that you just created. Go into the settings of the application and click on "Reveal Config Vars" This will be where you need to add each of the fields from the .env file into these locations. Add new fields for each .env line.
 
 ![Heroku Config variables][heroku-config]
 
-Seventh thing that you need to do is go back into the command prompt and type "git push heroku master" this will now upload the app and build it and run it.
+### Seventh
+Go back into the command prompt and type "git push heroku master" this will now upload the app and build it and run it.
 
-Last thing that you need to do is open up the Cisco Webex Platform again. Once it is open, click on the plus button on the top left to the right of the search bar and click on "contact a person". in the search box that appears, you will need to type the email address that you noted down in step one. This will start a new chat with the bot!
+### Eighth and Last
+Open up the Cisco Webex Platform again. Once it is open, click on the plus button on the top left to the right of the search bar and click on "contact a person". in the search box that appears, you will need to type the email address that you noted down in step one. This will start a new chat with the bot!
 
 ![Webex Plus button add a new chat.][webex-add-button]
 
@@ -81,7 +89,7 @@ If you wish to contribute to this package, please clone the repository and creat
 [Build-A-Bot-Botkit]: https://worthenwebcom.files.wordpress.com/2018/11/build-a-bot-botkit.png
 [Cisco-Developer-Create-Bot]: https://worthenwebcom.files.wordpress.com/2018/11/cisco-developer-create-bot.png
 [cisco-developer-create-bot-form-with-email]: https://worthenwebcom.files.wordpress.com/2018/11/cisco-developer-create-bot-form-with-email.png
-[trello-developer-api-key-with-token-button]: https://worthenwebcom.files.wordpress.com/2018/11/trello-developer-api-key-with-token-button.png
 [webex-add-button]: https://worthenwebcom.files.wordpress.com/2018/11/webex-add-button.png
 [webex-opening-screen]: https://worthenwebcom.files.wordpress.com/2018/11/webex-opening-screen.png
 [heroku-config]: https://worthenwebcom.files.wordpress.com/2018/11/heroku-config-vars.png
+[trello-developer-api-key-with-token-button]: https://worthenwebcom.files.wordpress.com/2018/11/trello-developer-api-key-with-token-button.png
