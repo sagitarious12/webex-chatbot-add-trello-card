@@ -3,7 +3,7 @@
 this package was created with the intent of teaching how to make integrations into Cisco Webex Chat system. 
 
 ### What does this do?
-This specific integration will allow any person to add a card onto a trello board.
+This specific integration will allow any person to add a card onto a trello board. This bot works by 'listening' for specific keywords and then starting a conversation based on that keyword. Then it will start a conversation in order to gather the required information to be able to create a card on your trello account. When you have completed the small conversation that you have with this chatbot, you will now have a new card on one of your lists in trello.
 
 ## Installation
 
